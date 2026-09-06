@@ -1,0 +1,114 @@
+{
+  "format": "glucose-guild-pack",
+  "version": 1,
+  "name": "Glucose Guild: Starter Kit",
+  "description": "The foundational quest pack from the Glucose Guild. Dawn scans, pre-bolus discipline, carb counting, hydration, site rotation, and weekly stability trials.",
+  "goals": [
+    {
+      "title": "Glucose Discipline",
+      "emoji": "🛡️"
+    },
+    {
+      "title": "Stable Range",
+      "emoji": "🎯"
+    }
+  ],
+  "quests": [
+    {
+      "title": "⚔️ The Dawn Scan",
+      "goal": "Glucose Discipline",
+      "note": "Log your fasting glucose within 30 mins of waking.",
+      "cadence": "daily",
+      "rule": { "cadence": "daily", "mode": "every_day" },
+      "target_type": "checkbox",
+      "difficulty": "medium",
+      "essential": true,
+      "domain": "warrior"
+    },
+    {
+      "title": "🍳 The Chef's Kiss",
+      "goal": "Glucose Discipline",
+      "note": "Log your insulin dose BEFORE eating breakfast.",
+      "cadence": "daily",
+      "rule": { "cadence": "daily", "mode": "every_day" },
+      "target_type": "checkbox",
+      "difficulty": "medium",
+      "essential": true,
+      "domain": "sage"
+    },
+    {
+      "title": "📊 Carb Counter",
+      "goal": "Glucose Discipline",
+      "note": "Log estimated carbs for all meals today.",
+      "cadence": "daily",
+      "rule": { "cadence": "daily", "mode": "every_day" },
+      "target_type": "counter",
+      "target_value": 3,
+      "unit": "meals",
+      "difficulty": "easy",
+      "essential": false,
+      "domain": "sage"
+    },
+    {
+      "title": "💧 River Flow",
+      "goal": "Stable Range",
+      "note": "Drink 8 glasses of water.",
+      "cadence": "daily",
+      "rule": { "cadence": "daily", "mode": "every_day" },
+      "target_type": "counter",
+      "target_value": 8,
+      "unit": "glasses",
+      "difficulty": "easy",
+      "essential": false,
+      "domain": "monk"
+    },
+    {
+      "title": "🌀 Rotator Cuff",
+      "goal": "Glucose Discipline",
+      "note": "Log your current injection/pump site location.",
+      "cadence": "daily",
+      "rule": { "cadence": "daily", "mode": "every_day" },
+      "target_type": "checkbox",
+      "difficulty": "easy",
+      "essential": false,
+      "domain": "bard"
+    },
+    {
+      "title": "🛡️ The Stabilizer",
+      "goal": "Stable Range",
+      "note": "Achieve 70% Time-in-Range for 5 out of 7 days.",
+      "cadence": "weekly",
+      "rule": { "cadence": "weekly", "mode": "times", "times": 5 },
+      "target_type": "counter",
+      "target_value": 5,
+      "unit": "days",
+      "difficulty": "hard",
+      "essential": false,
+      "domain": "warrior"
+    },
+    {
+      "title": "🍕 The Pizza Gauntlet",
+      "goal": "Stable Range",
+      "note": "Log a fatty meal, take an extended bolus, AND check BG 3hrs later.",
+      "cadence": "weekly",
+      "rule": { "cadence": "weekly", "mode": "times", "times": 3 },
+      "target_type": "counter",
+      "target_value": 3,
+      "unit": "trials",
+      "difficulty": "hard",
+      "essential": false,
+      "domain": "artificer"
+    },
+    {
+      "title": "🏥 The Endo Briefing",
+      "goal": "Glucose Discipline",
+      "note": "Export your 30-day report and share it with your doctor.",
+      "cadence": "single",
+      "rule": { "cadence": "single" },
+      "target_type": "checkbox",
+      "difficulty": "hard",
+      "essential": false,
+      "domain": "ranger"
+    }
+  ]
+}
